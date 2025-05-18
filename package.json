@@ -1,23 +1,28 @@
 {
   "name": "contactbook-backend",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server"
   },
-  "author": "Phuoc Nguyen",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hongphuoc6104/contactbook-backend.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hongphuoc6104/contactbook-backend/issues"
+  },
+  "homepage": "https://github.com/hongphuoc6104/contactbook-backend#readme",
   "description": "",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.27.0",
-    "eslint": "^9.27.0",
-    "eslint-config-prettier": "^10.1.5",
-    "eslint-plugin-vue": "^10.1.0",
-    "globals": "^16.1.0",
-    "prettier": "^3.5.3"
+    "nodemon": "^3.1.10"
   }
 }
