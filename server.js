@@ -1,12 +1,9 @@
-const express = require('express');
-const cors = require('cors');
+const app = require('./app');
+const config = require('./app/config');
 
-const app = express();
-
-app.use(cors());
-app.use(express.json());
-
-app.get('/', (req, res)=>{
-    res.send('hello ')
+const PORT = config.app.port;
+app.listen(PORT, ()=>{
+    console.log(`server is running on port ${PORT}.`);
 });
+
 
